@@ -19,10 +19,11 @@ Example usage:
 
     tau_sum = tau_cat + tau_dog # add two task vectors
     tau_diff = tau_cat - tau_dog # subtract two task vectors
-    tau_half = tau_half = tau_cat * 0.5 # scale the task vector
+    tau_half = tau_cat * 0.5 # scale the task vector
     tau_half = tau_cat.scale(0.5) # scale the task vector (alias)
 
-    tau_cat.apply_to_adapter("path/to/new_base_lora", "path/to/merged_adapter.pt", alpha=0.5)
+    tau_cat.apply_to_adapter("path/to/base_adapter", "path/to/new_adapter", alpha=0.5)
+    # new_adapter = base_adapter + 0.5 * tau_cat
 
     tau_cat.summary(n=10) # print first n keys in the vector
     len(tau_cat) # get number of parameters in the vector
