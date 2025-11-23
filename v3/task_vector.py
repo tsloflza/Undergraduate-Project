@@ -75,7 +75,7 @@ def task_vector(model_A_path: str, s: float, model_B_path: str, save_path: str):
         save_path: Directory to save the resulting model.
     """
     print(f"--- Starting Task Vector Arithmetic ---")
-    print(f"Formula: Result = A + {s:.2f} * (B - Pretrain)")
+    print(f"Formula: Result = A + {s:.2f} * (B - Pretrained)")
     
     # 1. Load State Dicts
     print("Loading Model A...")

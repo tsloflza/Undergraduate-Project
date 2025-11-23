@@ -38,16 +38,16 @@ def _load_state_dict(path: str) -> Dict[str, torch.Tensor]:
         
     return state_dict
 
-def linear_arith(adapter_a_path: str, scaler: float, adapter_b_path: str, save_path: str):
+def linear_arith(adapter_a_path: str, scalar: float, adapter_b_path: str, save_path: str):
     """
-    Calculates: Result = Adapter_A + (Scaler * Adapter_B)
+    Calculates: Result = Adapter_A + (scalar * Adapter_B)
     Saves the result and copies the configuration JSON.
     """
     # 1. Load weights
     state_a = _load_state_dict(adapter_a_path)
     state_b = _load_state_dict(adapter_b_path)
 
-    # 2. Perform Arithmetic: A + scaler * B
+    # 2. Perform Arithmetic: A + scalar * B
     new_state_dict = {}
     
     # Intersection of keys to be safe, though typically they should match
@@ -59,14 +59,14 @@ def linear_arith(adapter_a_path: str, scaler: float, adapter_b_path: str, save_p
         print(f"Warning: Mismatch in keys. Adapter A has {len(keys_a)}, Adapter B has {len(keys_b)}.")
         print("Proceeding with common keys only.")
 
-    print(f"Computing: A + {scaler:.2f} * B ...")
+    print(f"Computing: A + {scalar:.2f} * B ...")
     
     for key in common_keys:
         tensor_a = state_a[key]
         tensor_b = state_b[key]
         
         # Calculation
-        new_tensor = tensor_a + (tensor_b * scaler)
+        new_tensor = tensor_a + (tensor_b * scalar)
         new_state_dict[key] = new_tensor
 
     # 3. Prepare Output Directory
@@ -94,9 +94,9 @@ def linear_arith(adapter_a_path: str, scaler: float, adapter_b_path: str, save_p
         print("Warning: adapter_config.json not found in source paths. You may need to copy it manually.")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Adapter Arithmetic: A + scaler * B")
+    parser = argparse.ArgumentParser(description="Adapter Arithmetic: A + scalar * B")
     parser.add_argument("--adapter_a", type=str, required=True, help="Path to adapter A (directory or file)")
-    parser.add_argument("--scaler", type=float, required=True, help="Scaling factor for adapter B")
+    parser.add_argument("--scalar", type=float, required=True, help="Scaling factor for adapter B")
     parser.add_argument("--adapter_b", type=str, required=True, help="Path to adapter B (directory or file)")
     parser.add_argument("--save_path", type=str, required=True, help="Directory to save the result")
 
@@ -104,7 +104,7 @@ if __name__ == "__main__":
 
     linear_arith(
         adapter_a_path=args.adapter_a,
-        scaler=args.scaler,
+        scalar=args.scalar,
         adapter_b_path=args.adapter_b,
         save_path=args.save_path
     )
