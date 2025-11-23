@@ -1,0 +1,104 @@
+Class                               Train        Val       Test
+-----------------------------------------------------------------
+petunia                               129         52         77
+passion flower                        126         50         75
+wallflower                             98         39         59
+water lily                             97         39         58
+watercress                             92         37         55
+rose                                   86         34         51
+frangipani                             83         33         50
+foxglove                               81         32         49
+cyclamen                               77         31         46
+lotus                                  68         27         42
+hibiscus                               66         26         39
+sword lily                             65         26         39
+barbeton daisy                         64         25         38
+bougainvillea                          64         26         38
+thorn apple                            60         24         36
+geranium                               57         23         34
+clematis                               56         22         34
+morning glory                          54         21         32
+bishop of llandaff                     54         22         33
+pink-yellow dahlia                     54         22         33
+cape flower                            54         22         32
+anthurium                              52         21         32
+californian poppy                      51         20         31
+azalea                                 48         19         29
+poinsettia                             46         19         28
+fritillary                             46         18         27
+primula                                46         19         28
+common dandelion                       46         18         28
+camellia                               46         18         27
+snapdragon                             44         17         26
+colt's foot                            44         17         26
+columbine                              43         17         26
+bird of paradise                       42         17         26
+sweet william                          42         17         26
+purple coneflower                      42         17         26
+wild pansy                             42         17         26
+peruvian lily                          41         16         25
+canna lily                             41         16         25
+mexican petunia                        41         16         25
+artichoke                              39         16         23
+gazania                                39         16         23
+ruby-lipped cattleya                   38         15         22
+hippeastrum                            38         15         23
+buttercup                              36         14         21
+pelargonium                            36         14         21
+lenten rose                            34         13         20
+marigold                               34         13         20
+orange dahlia                          34         13         20
+gaura                                  34         13         20
+bee balm                               33         13         20
+stemless gentian                       33         13         20
+mallow                                 33         13         20
+desert-rose                            32         13         18
+english marigold                       32         13         20
+magnolia                               32         13         18
+bromelia                               32         13         18
+tree poppy                             31         12         19
+hard-leaved pocket orchid              30         12         18
+pincushion flower                      30         12         17
+sunflower                              30         12         19
+osteospermum                           30         12         19
+daffodil                               30         12         17
+tree mallow                            29         12         17
+trumpet creeper                        29         12         17
+giant white arum lily                  28         11         17
+sweet pea                              28         11         17
+great masterwort                       28         11         17
+japanese anemone                       28         11         16
+black-eyed susan                       27         11         16
+bearded iris                           27         11         16
+windflower                             27         11         16
+silverbush                             26         10         16
+carnation                              26         10         16
+cautleya spicata                       25         10         15
+king protea                            24         10         15
+spear thistle                          24         10         14
+balloon flower                         24         10         15
+oxeye daisy                            24         10         15
+yellow iris                            24         10         15
+blanket flower                         24         10         15
+blackberry lily                        24         10         14
+ball moss                              23          9         14
+monkshood                              23          9         14
+love in the mist                       23          9         14
+garden phlox                           22          9         14
+alpine sea holly                       22          9         12
+globe thistle                          22          9         14
+tiger lily                             22          9         14
+red ginger                             21          8         13
+spring crocus                          21          8         13
+corn poppy                             20          8         13
+grape hyacinth                         20          8         13
+canterbury bells                       20          8         12
+globe-flower                           20          8         13
+toad lily                              20          8         13
+pink primrose                          20          8         12
+fire lily                              20          8         12
+prince of wales feathers               20          8         12
+mexican aster                          20          8         12
+siam tulip                             20          8         13
+bolero deep blue                       20          8         12
+moon orchid                            20          8         12
